@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<meta charset="UTF-8">
+<title>B&B | DM</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="main.css">
+       
+    </head>  
+    
+    <body onresize="resizeOffset()">
+        
+<header>
+    <h1><a href="index.html">Basilisks for Babies</a></h1>
+<h2>Dungeon Master | Game Master</h2>
+    
+    <div class="btn-wrap">
+    <h3>CARDS</h3>
+    <div class="btn-group">
+        <button class="cardButton" id="settingButton" onclick="addCard(settingCards)" title="Generate a new setting card.">Setting</button>
+        <button class="cardButton" id="startingButton" onclick="addCard(startingCards)" title="Generate a new starting card.">Starting</button>
+        <button class="cardButton" id="situationButton" onclick="addCard(situationCards)" title="Generate a new sitaution card.">Situation</button>
+        <button class="cardButton" id="goalButton" onclick="addCard(goalCards)" title="Generate a new goal card.">Goal</button>
+                <button class="cardButton" id="mosnterButton" onclick="addCard(monsterCards)" title="Generate a new monster card.">Monster</button>
+        
+            <button class="cardButton" id="characterButton" onclick="newCharacter()" title="Generate a new character card.">Character / NPC</button>
+        
+        <button class="cardButton" id="itemButton" onclick="addCard(itemCards)" title="Generate a new item card.">Item</button>           
+        <button class="cardButton" id="noteButton" onclick="newNote("","","")" title="Generate a new note card.">Note</button>
+        
+        <div class="dropdown">
+        <button class="dropbtn" title="Generate a new description based on the selected items.">MadLibs</button>
+              <div class="dropdown-content">
+                  <a href="#" onclick="startMadLibs()">Starting Scenario</a>
+                  <a href="#" onclick="challengeMadLibs()">Challenge Scenario</a>
+             </div>
+        </div>
+        
+        
+        
+        
+        </div>
+    </div>
+        </header>
+
+    <div class="container">
+    </div>
+        
+        <div id="cardDrop"> Select one of the cards with the buttons above. The card will then be randomly selected and will appear here. </div>
+    
+</body>    
+
+     <script src="main.js"></script>
+    
+</html>

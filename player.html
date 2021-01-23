@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <header>
+<meta charset="UTF-8">
+<title>B&B | Player</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="main.css">
+    </header>
+    
+ <body onresize="resizeOffset()">
+        
+<header>
+    <h1><a href="index.html">Basilisks for Babies</a></h1>
+<h2>Player</h2>
+    
+    <div class="btn-wrap">
+    <h3>CARDS</h3>
+    <div class="btn-group">
+        <button class="cardButton" onclick="newCharacter()" title="Generate a new character card.">Character</button>
+    
+        <button class="cardButton" id="situationButton" onclick="addCard(situationCards)" title="Generate a new situation card.">Situation</button>
+        <button class="cardButton" id="itemButton" onclick="addCard(itemCards)" title="Generate a new item card.">Item</button>           
+        <button class="cardButton" id="noteButton" onclick="newNote()" title="Generate a new note card.">Note</button>
+
+        </div>
+    </div>
+        </header>
+
+    <div class="container">
+    </div>
+        
+        <div id="cardDrop"> Select one of the cards with the buttons above. The card will then be randomly selected and will appear here. </div>
+    
+
+</body>    
+  
+    <script src="main.js"></script>
+    
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<!--
+TO DO (doable): 
+- PLAYER SKILLS
+- ROLLING DICE
+- PLAYER BACKGROUND MADLIBS
+
+- add "i" icon with more information about... literally everything
+   - Player Class
+   - Player Hit Points
+   - Player Hit Die
+   - Player Abilities (all of them lol)
+- add item cards to player page
+- Player item cards 
+- Player backstory cards?
+- Player motive cards?
+
+TO DO (stretch goals):
+-Why do locations move when they're grouped together??
+-Grouping note cards
+- functionality when the window size is changed?
+  - Position relative to parent (.container) ?
+- Two "workspaces": one to show players, and one to not show players?
+- Save page information in URL or cookies incase you lose the page / wanna continue the adventure?? Maybe download webpage? but sometimes the javascript breaks?
+   - For some reason when downloading the page, after opening it the file doesn't have the draggable javascript anymore?
+
+DONE:
+- "sort" cards; have them order themselves nicely incase one gets lost or something
+- Land cards below their respective buttons
+- delete button on cards to get rid of one
+- Add note card
+- Change header color
+- Added drop down (limited functionality)
+- Maybe be able to change zindex of cards?
+- Ability to resize cards
+- Reset card size button back to default width (200px) and auto height (for both notes  & reg cards)
+- CAN'T DELETE ITEM CARDS ON DM PAGE? > MOTHER'S RING??: turns out you can't have string characters like ' or " in an ID lmao
+- Group cards by pressing a button (button changed to checkbox)
+- Ungroup cards by pressing a button on one of the cards in the group
+- Push cards to "visible" array, instead of using the actual picking array to track which ones are visible and which aren't
+- Fixed randomize on DM cards, so now the cards are actually random each time, going through the entire array before shuffling and going through the shuffled array
+-set a "landing spot" for all cards to land, then that figures out the overcrowded workspace!
+- Added Change color, reset card size back
+- Added goal cards
+-->
+
+
+<html lang="en">
+    <header>
+<meta charset="UTF-8">
+<title>B&B | Home</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="main.css">
+    </header>
+    
+    
+    
+    <body>
+
+<div class="">
+ <h1>Basilisks for Babies</h1>
+ <p>Ever wanted to play Dungeons and Dragons but didn't know how?</p>
+ <p>Or your DM didn't feel like prepping a one-shot?</p>
+    <p>Welcome to Basilisks for Babies, an easy, no-prep D&D one-shot* generator!</p>
+    
+    <p>*I guess technically you could use this for a whole campaign. If you do, best of luck to you!</p>
+    <p> Are you a player or a Dungeon Master / Game Master? </p>
+    
+        </div>
+        
+        
+<div class="row">
+    
+    <div class="column" style="width: 50%;">
+    <a href="player.html" class="btn btn-2">I'm a player!</a> 
+    </div>
+    
+    <div class="column" style="width: 50%;">
+      <a href="dm.html" class="btn btn-2">I'm a DM!</a> 
+    </div>    
+    </div>
+        
+</body>
+    
+</html>
